@@ -1,9 +1,8 @@
 name: Release Workflow
 on:
-  push:
-    branches: [main]
+  pull_request:
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "real release workflow"
+      - run: echo "attacker-controlled workflow named Release Workflow, from a FORK PR"
